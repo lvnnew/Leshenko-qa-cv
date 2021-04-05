@@ -182,6 +182,7 @@ body.scale-cv{
 }
 
 .scale-cv .interests__container{
+  grid-template-columns: repeat(4, .5fr);
   column-gap: 2.5rem;
 }
 
@@ -510,13 +511,14 @@ img{
 /*========== Интересы ==========*/
 
 .interests__container{
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: var(--mb-2);
 }
 
 .interests__content{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -524,6 +526,9 @@ img{
   font-size: 1.5rem;
   color: var(--text-color);
   margin-bottom: .25rem;
+}
+.interests__name{
+  text-align: center;
 }
 
 /* Прокрутка наверх */
@@ -624,12 +629,12 @@ img{
   }
 
   .languages__content{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
 
   .interests__container{
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 5.5rem;
   }
 }
